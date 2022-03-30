@@ -1,0 +1,25 @@
+public class Lekcja6 {
+    public static void main(String[] args){
+        int poraRoku = 5;
+
+        //Switch do zmian pory roku
+        switch (poraRoku){
+            case 1:
+                System.out.println("Wiosna");
+                break;
+            case 2:
+                System.out.println("Lato");
+                break;
+            case 3:
+                System.out.println("Jesien");
+                break;
+            case 4:
+                System.out.println("Zima");
+                break;
+                //defaultowy czyli domyslna rzecz ktora sie wykona
+                //jesli nie ma takiego switcha
+            default:
+                System.out.println("Nie ma takiej pory roku :)");
+        }
+    }
+}
