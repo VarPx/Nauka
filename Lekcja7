@@ -1,0 +1,26 @@
+public class Lekcja7 {
+    public static void main(String[] args) {
+//        int i = -5;
+        //1 pętla "while"
+//        while (i > 0){
+//            System.out.println(i);
+//            i--;
+//        }
+
+        //2 pętla - "do while",
+        //funckja "do" zawsze jest wykonana chociaż raz
+//        do {
+//            System.out.println(i);
+//            i--;
+//        } while (i > 0);
+
+        //3 pętla z licznikiem, pierwsza część to zmienna,
+        //która określa liczbę powtózenia, druga część to ogranicznie,
+        //w tym przypadku dopóki 5 będzie większe od 0 to pętla będzie się
+        //powtarzać, ostatnia część odpowiada za operacje
+        //implementacyjne/deklementacyjne
+        for (int i = 5; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
+}
