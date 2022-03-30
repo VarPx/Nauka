@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+import static java.lang.Integer.*;
+
+public class Lekcja1 {
+    public static void main(String[] args){
+
+            Scanner scanner = new Scanner(System.in); //Funckja wprowadzania danych z klawiatury
+            String name; //Zmienna name która będzie przechowywać imię
+            System.out.print("Podaj swoje imie: "); //Wyświetla napis
+            name = scanner.next(); //Wprowadza dane wporwadzone za pomocą klawiatury do zmiennej "name"
+
+            System.out.print("Podaj swoje nazwisko: "); //Wyświetla napis
+            String surname; //Zmienna która przechowuje nazwisko
+            surname = scanner.next(); //Wprowadza nazwisko do zmiennej
+
+            System.out.print("Witaj " + name + " " + surname); //Wyświetla napis z wprowadzonym imieniem i nazwiskiem
+    }
+}
