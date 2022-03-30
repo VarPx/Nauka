@@ -1,0 +1,30 @@
+public class Lekcja9 {
+    public static void main(String[] args){
+        //tworzymy obiekt tablice na Stringach
+//        String[] tab = new String[20];
+
+        //zawartość tabeli którą deklarujemy
+//        tab[0] = "Jakub";
+//        tab[1] = "Dagmara";
+//        tab[2] = "Bartosz";
+//        tab[3] = "Robert";
+//        tab[4] = "Barbara";
+//        tab[19] = "Romek";
+
+        //drugi typ tablicy na int (szybszy, po przecinku kolejne argumenty)
+//        int[] tab = {0, 2, 5, 8, 9};
+
+        //pierwszy typ tablicy ale na int
+        int[] tab = new int[5];
+        tab[0] = 2;
+        tab[1] = 3;
+
+        //Wyświelta długość tablicy
+//        System.out.println(tab.length);
+
+        //pętla for jest dobra dla tablicy
+        for(int i = 0; i < tab.length; i++){
+            System.out.println(tab[i]);
+        }
+    }
+}
