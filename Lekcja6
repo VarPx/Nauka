@@ -1,11 +1,14 @@
 public class Lekcja6 {
     public static void main(String[] args){
+        //zmienna integer o nazwie poraRoku odpowiada
+        //za wybranie odpowiedniego "case"
         int poraRoku = 5;
 
         //Switch do zmian pory roku
         switch (poraRoku){
             case 1:
                 System.out.println("Wiosna");
+                //break, powoduje zakończenie procesu
                 break;
             case 2:
                 System.out.println("Lato");
