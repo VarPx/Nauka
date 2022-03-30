@@ -1,0 +1,29 @@
+public class Lekcja4 {
+    public static void main(String[] args){
+        int a = 6, b =6;
+
+        // "==" jest to operator porównania
+        //boolean logiczna = a == b;
+
+        // "!=" sprawdza czy liczby są różne
+        //boolean logiczna = a != b;
+
+        // ">" czy a jest większe od b
+        //boolean logiczna = a > b;
+
+        // ">=" czyli a jest większe lub równe b
+        //boolean logiczna = a >= b;
+
+        // "&&" koniunkcja logiczna "i" czyli połączenie dwóch działań
+        //boolean logiczna = 5 >= 5 && 0 < 1;
+
+        // "||" logiczna alternatywa/logiczne LUB
+        //boolean logiczna = 10 >= 10 || 4>2 ;
+
+        // "!" jedno argumentowy operator negacji
+        //boolean logiczna = !true;
+
+        boolean logiczna = !(a == b);
+        System.out.println(logiczna); //wyświetla komunikat "false"
+    }
+}
