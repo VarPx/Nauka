@@ -1,0 +1,12 @@
+public class Lekcja10 {
+    public static void main(String[] args){
+        //Tworzenie tablicy
+        String[] tab = {"Jakub", "Bartosz", "Dagmara", "Robert"};
+
+        //pętla for each, czyli będzie wyświetlała każdy element
+        //tablicy po kolej w kolejniości takiej samej jak wpisaliśmy
+        for(String item : tab){
+            System.out.println(item);
+        }
+    }
+}
