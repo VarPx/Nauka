@@ -1,0 +1,52 @@
+public class Lekcja2 {
+    public static void main(String[] args){
+        //Znaki
+
+        // char- na polski "znak" pojedyńczy znak
+        char zmChar = 'b';
+        System.out.println("char: " + zmChar);
+        // String ciąg znaków
+        String zmString = "Jakub";
+        System.out.println("String: " + zmString);
+        // Boolean tylko prawda lub fasłsz
+        boolean zmBoolean = true;
+        System.out.println("boolean: " + zmBoolean);
+
+        // Typy danych z liczbami całkowitymi
+
+        // byte czyli tylko liczby całkowite od -128 do 127
+        byte zmByte = Byte.MIN_VALUE;
+        byte zmByte2 = Byte.MAX_VALUE;
+        System.out.println("byte: " + zmByte + " - " + zmByte2);
+        // short krótkie liczby od -32768 do 32767
+        short zmShort = Short.MIN_VALUE;
+        short zmShort2 = Short.MAX_VALUE;
+        System.out.println("short: " + zmShort + " - " + zmShort2);
+        // int najczęściej używany do liczb
+        int zmInt = Integer.MIN_VALUE;
+        int zmInt2 = Integer.MAX_VALUE;
+        System.out.println("int: " + zmInt + " - " + zmInt2);
+        // long bardzo duże liczby
+        long zmLong = Long.MIN_VALUE;
+        long zmLong2 = Long.MAX_VALUE;
+        System.out.println("long: " + zmLong +" - " + zmLong2);
+
+        // Liczby rzeczywiste
+        // float musi być oznaczony na końcu albo małą "f" albo dużą "F"
+        // zamiast "," wstawiamy "."
+        float zmFloat = Float.MIN_VALUE;
+        float zmFloat2 = Float.MAX_VALUE;
+        System.out.println("float: " + zmFloat + " - " + zmFloat2);
+        // double ma trochę większą precyzję od float
+        // nie potrzeba na końcu cyfry dopisywać tak jak w float ani
+        // małego "d" ani dużego "D"
+        double zmDouble = Double.MIN_VALUE;
+        double zmDouble2 = Double.MAX_VALUE;
+        System.out.println("double: " + zmDouble + " - " +zmDouble2);
+
+        // dopisując "final" sugeruje, że jest to stała i
+        // nie można jej zmienić
+        final int liczba = 256;
+        System.out.println(liczba);
+    }
+}
