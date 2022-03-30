@@ -1,0 +1,24 @@
+public class Lekcja5 {
+    public static void main(String[] args) {
+        int wiek = 15;
+        //Początek pętli for else, która wyświetla napis "Pełnoletnia",
+        //jeśli osoba ma więcej niż 18 lat
+        if (wiek >= 18) {
+            System.out.println("Pelnoletnia");
+        }
+        //Pętla, która wyświetla napis "możesz pracować" jeśli osoba
+        //ma 16 lat lub więcej
+        else if (wiek >= 16)
+        {
+            System.out.println("Mozesz pracowac");
+        }
+        //Pętla, która wyświetla napis, że nie możesz pracować jeśli osoba
+        //ma mniej niz 16 lat
+        else {
+            System.out.println("Nie jeszcze pracować!");
+        }
+        //Prosta 3 argumentowa isntrukcja
+        String imie = wiek >= 18 ? "Jakub" : "Kubus";
+        System.out.println(imie);
+    }
+}
