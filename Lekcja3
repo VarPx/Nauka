@@ -1,0 +1,27 @@
+public class Lekcja3 {
+    public static void main(String[] args){
+        int a = 20;
+        int b = 10;
+        //int wynik = a + b;
+
+        //a = a + b;
+
+        /* skrócone
+        a += b;
+        a -= b;
+        a *= b;
+        a /= b;
+        */
+
+        //Math.pow(2, 3); "pow" od power, czyli moc, potęga
+        //Math.sqrt(9); pierwiatek kwadratowy
+        //Math.abs(); wartość bezwględna (bez znaku)
+
+        //implementacja czyli zawsze zwiększona o 1
+        //a ++;
+        //deklementacja czyli zawsze mniej o 1
+        //a --;
+
+        System.out.println(a + b);
+    }
+}
