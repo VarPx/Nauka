@@ -1,1 +1,11 @@
+public class Lekcja13 {
+    static public void main(String[] args){
+        float a = 5.9f; //zmienna a która jest liczbą 5.9
+        int b = (int)a; //konwersja jawna zmiennej float do integer
+        String liczba = Integer.toString(b); //konwersja integer do Stringa
+        int c = Integer.parseInt(liczba); //kowersja Stringa do integer
+
+        System.out.println(c + 2);
+    }
+}
 
