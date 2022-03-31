@@ -1,0 +1,17 @@
+public class Lekcja12 {
+    public static void main(String[] args) {
+        //Tworzenie tablicy jedno elementowej z wartością "6"
+        int[] y = {6};
+        y = zmien(y);
+        System.out.println(y[0]);
+    }
+
+    //Funkcja, która tworzy tablice int
+    public static int[] zmien(int[] x){
+        //Tworzymy nową tablice
+        x = new int[1];
+        x[0] += 20; //x[0] = x[0] + 20
+        System.out.println("Metoda: " + x[0]);
+        return x;
+    }
+}
