@@ -1,0 +1,35 @@
+public class Lekcja11 {
+    public static void main(String[] args) {
+        //Wyświetlanie napisu "Hello World"
+//    String h = wyswietl();
+//    System.out.println(h);
+//    }
+        //Metoda String, która jest przypisana do argumentu
+        //wyświetl
+//    static String wyswietl() {
+//    return "Hello World";
+//    }
+
+        //Wyświetlanie metod które są niżej
+        System.out.println(dodawanie());
+        System.out.println(dodawanie(5));
+        System.out.println(dodawanie(7, 3));
+    }
+
+    //pierwsza metoda
+    static int dodawanie() {
+        return 0;
+    }
+
+    //druga metoda, która przeciąża pierwszą
+    //przeciążenie - pozwala na tworzenie metod
+    //o takich samych nazwach ale różnych parametrach
+    static int dodawanie(int x) {
+        return ++x;
+    }
+
+    //trzecia metoda, która przeciąża pierwszą i drugą metode
+    static int dodawanie(int x, int y) {
+        return x + y;
+    }
+}
