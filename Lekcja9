@@ -14,7 +14,7 @@ public class Lekcja9 {
         //drugi typ tablicy na int (szybszy, po przecinku kolejne argumenty)
 //        int[] tab = {0, 2, 5, 8, 9};
 
-        //pierwszy typ tablicy ale na int
+        //pierwszy typ tablicy na int
         int[] tab = new int[5];
         tab[0] = 2;
         tab[1] = 3;
