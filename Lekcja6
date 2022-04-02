@@ -19,8 +19,8 @@ public class Lekcja6 {
             case 4:
                 System.out.println("Zima");
                 break;
-                //defaultowy czyli domyslna rzecz ktora sie wykona
-                //jesli nie ma takiego switcha
+                //defaultowy czyli domyślna rzecz która się wykona
+                //jeśli nie ma takiego switcha
             default:
                 System.out.println("Nie ma takiej pory roku :)");
         }
