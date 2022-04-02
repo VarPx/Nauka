@@ -29,7 +29,7 @@ public class Lekcja8 {
             else if (odpowiedz < losowa){
                 System.out.println("Twoja odpowiedz jest mniejsza od losu.");
             }
-        //koniec pętli
+        //koniec pętli.
         }while(odpowiedz != losowa);
         System.out.println("Brawo udalo Ci sie wygrac za " + i + " razem!");
 
