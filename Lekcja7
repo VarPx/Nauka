@@ -18,7 +18,7 @@ public class Lekcja7 {
         //która określa liczbę powtózenia, druga część to ogranicznie,
         //w tym przypadku dopóki 5 będzie większe od 0 to pętla będzie się
         //powtarzać, ostatnia część odpowiada za operacje
-        //implementacyjne/deklementacyjne
+        //implementacyjne/deklementacyjne.
         for (int i = 5; i > 0; i--) {
             System.out.println(i);
         }
