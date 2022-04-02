@@ -2,7 +2,7 @@ public class Lekcja5 {
     public static void main(String[] args) {
         int wiek = 15;
         //Początek pętli for else, która wyświetla napis "Pełnoletnia",
-        //jeśli osoba ma więcej niż 18 lat
+        //jeśli osoba ma więcej niż 18 lat.
         if (wiek >= 18) {
             System.out.println("Pelnoletnia");
         }
