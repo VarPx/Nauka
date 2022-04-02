@@ -32,7 +32,7 @@ public class Lekcja2 {
         System.out.println("long: " + zmLong +" - " + zmLong2);
 
         // Liczby rzeczywiste
-        // float musi być oznaczony na końcu albo małą "f" albo dużą "F"
+        // Float musi być oznaczony na końcu albo małą "f" albo dużą "F"
         // zamiast "," wstawiamy "."
         float zmFloat = Float.MIN_VALUE;
         float zmFloat2 = Float.MAX_VALUE;
