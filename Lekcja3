@@ -14,7 +14,7 @@ public class Lekcja3 {
         */
 
         //Math.pow(2, 3); "pow" od power, czyli moc, potęga
-        //Math.sqrt(9); pierwiatek kwadratowy
+        //Math.sqrt(9); pierwiastek kwadratowy
         //Math.abs(); wartość bezwględna (bez znaku)
 
         //implementacja czyli zawsze zwiększona o 1
