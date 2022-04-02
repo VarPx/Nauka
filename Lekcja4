@@ -11,7 +11,7 @@ public class Lekcja4 {
         // ">" czy a jest większe od b
         //boolean logiczna = a > b;
 
-        // ">=" czyli a jest większe lub równe b
+        // ">=" czyli a jest większe bądź równe b
         //boolean logiczna = a >= b;
 
         // "&&" koniunkcja logiczna "i" czyli połączenie dwóch działań
