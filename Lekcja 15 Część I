@@ -1,0 +1,15 @@
+public class Lekcja15a {
+    public static void main(String[] args){
+
+        //do kazdego elementu klasy zawsze odwolujemy sie po kropce
+    Czlowiek Jan = new Czlowiek("Jan");
+        //Jan.imie = "Jan";
+    System.out.println(Jan.imie);
+    System.out.println(Czlowiek.liczebnosc);
+
+    Czlowiek Jakub = new Czlowiek();
+    Jakub.imie = "Jakub";
+    System.out.println(Jakub.imie);
+    System.out.println(Czlowiek.liczebnosc);
+    }
+}
