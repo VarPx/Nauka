@@ -1,0 +1,30 @@
+public class Lekcja16 {
+    public static void main(String[] args){
+        int liczba = 40;
+        //dzialanie na prostej metodzie/funckji
+        System.out.println("Liczba przed modyfikacja: " + liczba);
+        zmien(liczba);
+        System.out.println("Liczba po modyfikacji: " + liczba);
+
+        //dzialanie na obiekcie (typie zlozonym)
+        Liczba oliczba = new Liczba();
+        oliczba.liczba = 40;
+        //odwoluje sie do obiketu ktory zosstal przypisany wyzej przez "+ oliczba.liczba"
+        System.out.println("Obiekt liczby przed modyfikacja: " + oliczba.liczba);
+        zmien(oliczba);
+        System.out.println("Obiekt liczby po modyfikacja: " + oliczba.liczba);
+
+    }
+    //tworzenie metody zmien, ktora przyjmuje "int" o zmiennej "liczba"
+    //pierwsze przeciazenie
+    public static void zmien(int liczba){
+        liczba = -1;
+    }
+
+    //tworzenie metody zmien, ktora przyjmuje klase "Liczba" o zmiennej "oliczba"
+    //drugie przeciazenie
+    public static void zmien(Liczba oliczba){
+
+        oliczba.liczba = -1;
+    }
+}
