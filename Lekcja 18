@@ -1,0 +1,36 @@
+public class Lekcja18 {
+    public static void main(String[] args){
+        //Math - zbior metod statycznych
+        int a = 2;
+        int b = 3;
+        //liczba która jest większa
+        System.out.println("Wynik to: " + Math.max(a, b));
+
+        //liczba która jest mniejsza
+        System.out.println("Wynik to: " + Math.min(a, b));
+
+        //wartość bezwzględna liczby
+        System.out.println("Wynik to: " + Math.abs(-9));
+
+        //potegowanie liczby
+        System.out.println("Wynik to: " + Math.pow(a, b));
+
+        //pierwiastek kwadratowy
+        System.out.println("Wynik to: " + Math.sqrt(16));
+
+        //zaokraglanie liczby
+        System.out.println("Wynik to: " + Math.round(19.5));
+
+        //zawsze zaokragla w góre
+        System.out.println("Wynik to: " + Math.ceil(5.00001));
+
+        //zawsze zaokragla w dol
+        System.out.println("Wynik to: " + Math.floor(5.5));
+
+        //liczba "PI"
+        System.out.println("Wynik to: " + Math.PI);
+
+        //liczba "E"
+        System.out.println("Wynik to: " + Math.E);
+    }
+}
