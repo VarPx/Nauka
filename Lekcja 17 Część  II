@@ -1,0 +1,30 @@
+public class Uczen {
+    //dodajemy slowko dostepu private - oznacza to ze jest dostepna tylko w klasie "Uczen"
+    //get
+    private String nazwisko;
+
+    //tworzymy get - czyli pobieranie danych
+    String getNazwisko(){
+        //"this" - powoduje, ze program szuka zmiennej "nazwisko" najpierw w swojej klasie
+        return "Nazwisko: " + this.nazwisko;
+    }
+
+    //tworzymy set - czyli wybieranie danych
+    void setNazwisko(String nazwisko){
+        //"logika biznesowa" czyli sprawdzanie i
+        // zabezpieczenie przed podaniem zlej wartosci
+        if(nazwisko.length() >= 2){
+            this.nazwisko = nazwisko;
+        }
+    }
+
+    private int ocena;
+    int getOcena(){
+        return this.ocena;
+    }
+    void setOcena(int ocena){
+        if(ocena >= 1 && ocena <= 6){
+            this.ocena = ocena;
+        }
+    }
+}
