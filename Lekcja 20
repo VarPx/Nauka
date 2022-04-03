@@ -1,0 +1,67 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+
+public class Lekcja20 {
+    public static void main(String[] args){
+        //Tworzenie LindekList
+        //LinkedList - nie zwaza na duplikowane elementy
+        LinkedList<String> lista = new LinkedList<>();
+        lista.add("Poznan");
+        lista.add("Poznan");
+
+        //Zabezpieczenie przed duplikatem w LinkedList,
+        //czyli if ktory sprawdza, czy dany element nie
+        //znajduje sie juz w zbiorze
+        if(lista.contains("Poznan") == false){
+            lista.add("Poznan");
+        }
+        
+        lista.add("Warszawa");
+        lista.add("Warszawa");
+        lista.add("Wroclaw");
+
+        lista.remove(0);
+        for (String e : lista){
+            System.out.println(e);
+        }
+        lista.clear();
+
+        //HashMapa - klucz powiazany z wartoscia
+        //czyli 2 wartosci
+        HashMap<Integer, String> mapa = new HashMap<>();
+
+        //dodawanie elementow do naszej kolekcji HashMap
+        mapa.put(1, "Poniedzialek");
+        mapa.put(5, "Piatek");
+        mapa.put(7, "Niedziela");
+        //wyswietlenie elementu, ktory jest przypisany do liczby 5
+        System.out.println(mapa.get(5));
+
+        System.out.println();
+        //do wyswietlania HashMap'y trzeba dopisac mapa.values
+        for (String e : mapa.values()){
+            System.out.println(e);
+        }
+
+        //ostatni element kolekcji
+        //HashSet - Jest to zbior. Tylko jeden element.
+        // Lista która nie moze przechowywac duplikatow
+        //LinkedHashSet - pamieta kolejnosc listy
+        //HashSet - nie pamieta kolejnosci listy
+        LinkedHashSet<String> zbior = new LinkedHashSet<>();
+
+        zbior.add("Warszawa");
+        zbior.add("Poznan");
+        zbior.add("Szczecin");
+        zbior.add("Szczecin");
+
+        System.out.println();
+        for(String e : zbior){
+            System.out.println(e);
+        }
+
+        System.out.println(zbior.size());
+    }
+}
