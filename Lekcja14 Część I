@@ -1,0 +1,26 @@
+public class Lekcja14 {
+    public static void main(String[] args){
+
+        //tworzenie obiketu kot
+        Zwierze kot = new Zwierze();
+        //zliczanie liczebnosci, musi brac pod uwage obiekt zwierze, zeby prwaidlowo liczyc kolejnosc
+        System.out.println(Zwierze.liczebnosc);
+
+        //wywolanie funckji glos i imie dla obiektu kot
+        kot.glos = "Meeeeow";
+        kot.imie = "Kot";
+        kot.przedstawSie();
+        kot.dajGlos(3);
+
+        //tworzenie obiektu pies
+        Zwierze pies = new Zwierze();
+        //zliczanie liczebnosci dla obiektu pies
+        System.out.println(Zwierze.liczebnosc);
+
+        //wywolanie funckji glos i imie dla obiektu pies
+        pies.glos = "Hau Hau";
+        pies.imie = "Nero";
+        pies.przedstawSie();
+        pies.dajGlos(3);
+    }
+}
