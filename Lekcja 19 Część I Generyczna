@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+
+public class Lekcja19a {
+    public static void main(String[] args){
+        //towrzenie zwierzat
+        Animal kot1 = new Animal("Rudy");
+        Animal kot2 = new Animal("Bury");
+        Animal kot3 = new Animal("Bialy");
+
+        //kolekcja ktora tworzy liste
+        //tablica zawsze jest ograniczona i trzeba oreslic dlgosc
+        //zaleta jest to, ze LISTA moze miec 0 elementow, zaraz
+        //100 albo 1000 pozycji
+        ArrayList lista = new ArrayList();
+
+        //nawiasy ostre zawsze sluza do typow generycznych
+        //tworzenie listy generycznej
+        ArrayList<Animal> listaG = new ArrayList<Animal>();
+
+        //dodawanie zwierzat do listy
+        lista.add(kot1);
+        lista.add(kot2);
+        lista.add(kot3);
+
+        //lista generyczna dodawanie zwierzat
+        listaG.add(kot1);
+        listaG.add(kot2);
+        listaG.add(kot3);
+
+        System.out.println("----------");
+        for(Animal k : listaG){
+            System.out.println(((Animal)k).imie);
+        }
+        System.out.println("----------");
+
+
+        System.out.println(((Animal)listaG.get(0)).imie);
+
+        System.out.println(listaG.size());
+
+        System.out.println(listaG.contains(kot1));
+
+        listaG.remove(kot2);
+        listaG.remove(0);
+        listaG.clear();
+        System.out.println(listaG.size());
+        System.out.println("----------");
+        for(Animal k : listaG){
+            System.out.println(((Animal)k).imie);
+        }
+        System.out.println("----------");
+
+    }
+}
