@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+
+public class Lekcja19 {
+    public static void main(String[] args){
+        //towrzenie zwierzat
+        Animal kot1 = new Animal("Rudy");
+        Animal kot2 = new Animal("Bury");
+        Animal kot3 = new Animal("Bialy");
+
+        //kolekcja ktora tworzy liste
+        //tablica zawsze jest ograniczona i trzeba oreslic dlgosc
+        //zaleta jest to, ze LISTA moze miec 0 elementow, zaraz
+        //100 albo 1000 pozycji
+        ArrayList lista = new ArrayList();
+
+        //dodawanie zwierzat do listy
+        lista.add(kot1);
+        lista.add(kot2);
+        lista.add(kot3);
+
+        //wyswietlenie calej listy
+        System.out.println("----------");
+        for(Object k : lista){
+            System.out.println(((Animal)k).imie);
+        }
+        System.out.println("----------");
+
+        //wywolanie danego elementu z listy
+        System.out.println(((Animal)lista.get(0)).imie);
+
+        //sprawdzenie ilosci pozycji w liscie
+        System.out.println(lista.size());
+
+
+        //
+        System.out.println(lista.contains(kot1));
+
+        //usuniecie danego elementu
+        lista.remove(kot2);
+        lista.remove(0);
+
+        //wyczyszczenie calej listy
+        lista.clear();
+
+
+        System.out.println(lista.size());
+        System.out.println("----------");
+        for(Object k : lista){
+            System.out.println(((Animal)k).imie);
+        }
+        System.out.println("----------");
+
+    }
+}
