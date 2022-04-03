@@ -1,0 +1,22 @@
+//klasa czlowiek i cialo miedzy nawiasami klamrowymi
+public class Czlowiek {
+    //konstruktor- nazwa metody musi byc taka sama jak klasa
+    //konstruktor również potrzebuje ciało.
+    //Niżej został stworzony konstruktor domyślny.
+    //W normalnym przypadku nie bedziemy tworzyc pustego konstruktora,
+    //bo taki juz istnieje.
+    //Czlowiek(String imie){
+    Czlowiek(){
+        liczebnosc ++;
+    }
+    Czlowiek(String imie){
+        //this - rozpoczyna szukanie obiektu na rzecz obiektu,
+        //ktory go wykonal i dopiero potem szuka dalej
+        this.imie = imie;
+        liczebnosc ++;
+    }
+    public String imie;
+    //liczebnosc mpowinna byc statyczna - "static" zeby mozna
+    //bylo zliczac kolejnych ludzi
+    static int liczebnosc = 0;
+}
