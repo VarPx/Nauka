@@ -1,0 +1,14 @@
+public class Lekcja23 {
+    public static void main(String[] args) {
+        System.out.println("Audi: ");
+        //tworzenie obiektu samochod
+        Samochod audi = new Samochod("Audi", 4,2);
+        audi.iloscKol = 4;
+        audi.marka = "Audi";
+
+        System.out.println("Subaru: ");
+        //tworzenie obiektu SamochodSportowy
+        SamochodSportowy subaru = new SamochodSportowy("Subaru", 4,5);
+
+    }
+}
