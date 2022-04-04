@@ -1,0 +1,28 @@
+//implementowanie interfejsu Comparable - ktory porownuje
+public class Animal implements Comparable<Animal>{
+    //metoda Animal
+    public Animal(String name){
+        this.name = name;
+    }
+    String name;
+        int wiek = 5;
+
+    @Override
+    //metoda comparable - czyli metoda porownania
+    public int compareTo(Animal o) {
+        //wyswietlanie juz po sortowanej listy
+        System.out.println(this.name.compareTo(o.name));
+
+        //petla ktora porownuje stringi i je sortuje
+        if(this.name.compareTo(o.name) != 0){
+
+            //nizej znowu musmy porownac name z obiektem name
+            //czyli porownujemy juz same stringi
+            return this.name.compareTo(o.name);
+        }
+
+        //po funkcji if wykonane zostanie drugie porownanie,
+        //ktore porowna do liczby
+        return this.wiek - o.wiek;
+    }
+}
