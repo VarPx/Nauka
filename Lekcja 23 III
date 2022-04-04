@@ -1,0 +1,11 @@
+//klasa nadrzedna z ktorej dziedziczymy
+public class Pojazd {
+    //zmienne
+    String marka;
+    int iloscKol;
+
+    //metoda odpal, ktora nic nie zwraca
+    protected void odpal(){
+        System.out.println("Pojazd odpalil.");
+    }
+}
