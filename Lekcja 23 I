@@ -1,6 +1,6 @@
 public class Lekcja23 {
     public static void main(String[] args) {
-        //tworzenie obiektu samochod
+        //tworzenie obiektu samochod.
         Samochod audi = new Samochod();
         audi.iloscKol = 4;
         audi.marka = "Audi";
@@ -9,14 +9,14 @@ public class Lekcja23 {
         audi.zamknijOtworz();
         audi.zamknijOtworz();
 
-        //tworzenie obiektu SamochodSportowy
+        //tworzenie obiektu SamochodSportowy.
         SamochodSportowy subaru = new SamochodSportowy();
         subaru.marka = "Subaru";
         System.out.println("\n" + subaru.marka);
         subaru.zamknijOtworz();
         subaru.odpal();
 
-        //tworzenie obiektu Motocykl
+        //tworzenie obiektu Motocykl.
         Motocykl suzuki = new Motocykl();
         System.out.println("\n" + suzuki.iloscKol);
     }
