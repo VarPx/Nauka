@@ -1,0 +1,12 @@
+//zwykła klasa Animal
+//public class Animal {
+    //metoda dajGlos ktora nic nie zwraca (void)
+//    public void dajGlos(){
+//        System.out.println("Grrrr");
+//    }
+
+//abstrakcyjna klasa Animal
+//i abstrakcyjna metoda
+abstract public class Animal {
+    abstract public void dajGlos();
+}
