@@ -1,0 +1,11 @@
+public class Dog extends Animal{
+    //metoda
+    public void idz(){
+        System.out.println("Idzie piesek");
+    }
+    //metoda nadpisana dajGlos
+    @Override
+    public void dajGlos() {
+        System.out.println("Hau Hau");
+    }
+}
