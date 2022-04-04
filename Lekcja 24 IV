@@ -1,0 +1,8 @@
+//klasa SamochodSportowy dziedziczy po klasie Samochod,
+//ktora dziedziczy po klasie Pojazd
+public class SamochodSportowy extends Samochod{
+    SamochodSportowy(String marka, int iloscKol, int iloscDrzwi){
+        super (marka, iloscKol, iloscDrzwi);
+        System.out.println("Konstruktor klasy - SamochodSportowy");
+    }
+}
