@@ -1,1 +1,27 @@
+//klasa ktora dziedziczy po klasie "Pojazd
+//extends - rozszerza klase, trzeba podac
+//z jakiej klasy bedzie dziedziczyc.
+//Mozna dziedziczyc zawsze tylko z jednej klasy.
+//Interfejsow za to mozna implementowac wiele.
+public class Samochod extends Pojazd {
+    //konstruktor
+    Samochod(String marka, int iloscKol, int iloscDrzwi){
+        //super - odwolanie do konstruktora nadzednego
+        //super. - odwolanie do zmiennych
+        super(marka, iloscKol);
+        this.iloscDrzwi = iloscDrzwi;
+        System.out.println("Konstruktor klasy - Samochod");
+    }
+    int iloscDrzwi;
+    boolean otwarty = false;
 
+    //metoda
+    void zamknijOtworz(){
+        otwarty = !otwarty;
+        if (otwarty)
+        System.out.println("Otwarto");
+        else
+            System.out.println("Zamknieto");
+
+    }
+}
