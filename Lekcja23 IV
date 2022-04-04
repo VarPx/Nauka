@@ -1,0 +1,20 @@
+import java.util.Comparator;
+
+//klasa ktora dziedziczy po klasie "Pojazd
+//extends - rozszerza klase, trzeba podac
+//z jakiej klasy bedzie dziedziczyc.
+//Mozna dziedziczyc zawsze tylko z jednej klasy.
+//Interfejsow za to mozna implementowac wiele.
+public class Samochod extends Pojazd {
+    boolean otwarty = false;
+
+    //metoda
+    void zamknijOtworz(){
+        otwarty = !otwarty;
+        if (otwarty)
+        System.out.println("Otwarto");
+        else
+            System.out.println("Zamknieto");
+
+    }
+}
