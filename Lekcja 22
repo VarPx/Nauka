@@ -1,0 +1,68 @@
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Lekcja22 {
+    public static void main(String[] args) {
+        //tryb generyczny kolejka "ArrayDeque" dziedziczy "Queue"
+        Queue<String> kolejka = new ArrayDeque<>();
+
+        //dodawanie elementu, offer zwraca 0 kiedy kolejka jest pelna
+//        kolejka.offer();
+
+        //dodawanie elementu do kolejki
+        kolejka.add("Pierwszy");
+        kolejka.add("Drugi");
+        kolejka.add("Trzeci");
+
+        System.out.println("Kolejka: ");
+        //size oczywiscie wyswietla ilosc argumentow w kolejce
+        System.out.println(kolejka.size());
+
+        //peek pozwala podgladnac co jest
+        //w kolejce i nie usuwa danego argumentu po wyswietleniu go
+        System.out.println(kolejka.peek());
+
+        //wyswietlanie kolejki polega na dodaniu slowa "remove"
+        //co spowoduje usuniecie elementu z kolejki i wyswietlenie go.
+        //Jesli kolejka bedzie juz pusta to "remove' wyswietli blad
+        System.out.println(kolejka.remove());
+
+        //dodanie slowa "pool" ruwniez usuwa element
+        //z kolejki i potem go wysweitla natomiast po ostatnim
+        //elemenecie zwroci wartosc "null"
+        System.out.println(kolejka.poll());
+
+        System.out.println(kolejka.remove());
+        System.out.println(kolejka.size());
+        System.out.println(kolejka.poll());
+
+        //"\n" dodaje linie odstepu
+        System.out.println("\n\nStos: ");
+        //druga kolekcja stos
+        //tworzenie stosu czyli "Stack"
+        //stos dziala odwrotnie do kolejki, czyli
+        //pierwszy argument bedzie ostatnim
+        //a ostatni pierwszym wyswietlonym
+        //"ostatni beda pierwszymi, a pierwszi ostatnimi"
+        Stack<String> stos = new Stack<>();
+
+        //kladziemy popychamy "push" cos do stosu
+        //czyli dodawanie elementu
+        stos.push("Pierwszy");
+        stos.push("Drugi");
+        stos.push("Trzeci");
+        System.out.println(stos.size());
+
+        //zdejmowanie/wyswietlanie elementow stosu
+        System.out.println(stos.pop());
+        stos.push("Ostatni");
+
+        //peek czyli tak samo jak w kolejce podglad
+        System.out.println(stos.peek());
+
+        System.out.println(stos.pop());
+        System.out.println(stos.pop());
+        System.out.println(stos.size());
+    }
+}
