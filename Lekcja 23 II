@@ -1,0 +1,7 @@
+//klasa Motocykl ktora dziedziczy po klasie Pojazd
+public class Motocykl extends Pojazd{
+    //konstruktor Motocykl
+    Motocykl(){
+        super.iloscKol = 2;
+    }
+}
