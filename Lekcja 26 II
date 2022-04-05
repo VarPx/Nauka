@@ -1,0 +1,10 @@
+//klasa ZleImieException, ktora dziedziczy po klasie
+//Exception, ktora sluzy do wyswietlania bledow
+public class ZleImieException extends Exception{
+    //nadpisana metoda ktora ma wyswietlic tekst bledu
+    @Override
+    public String getMessage() {
+        //wlasny blad ktory zostanie wyswietlony
+        return "Podano bledne imie";
+    }
+}
