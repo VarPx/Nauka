@@ -1,0 +1,14 @@
+public class Cat extends Animal{
+    //metoda idz
+    public void idz(){
+        System.out.println("Idzie kotek");
+    }
+
+    //metoda, "Override" czyli nadpisanie
+    @Override
+    public void dajGlos(){
+        //"super." czyli odwolanie sie do klasy
+        //nadrzednej, do klasy z ktorej dziedziczymy
+        System.out.println("Meow Meow");
+    }
+}
