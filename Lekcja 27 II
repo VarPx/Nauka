@@ -1,0 +1,7 @@
+public class Pojazd {
+    //konstruktor Pojazd
+    Pojazd(String marka) {
+        this.marka = marka;
+    }
+    String marka;
+}
