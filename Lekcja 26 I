@@ -1,0 +1,58 @@
+public class Lekcja25 {
+    public static void main(String[] args) {
+        //tworzenie obiektu kot na bazie Cat
+        Animal kot = new Cat();
+        kot.dajGlos();
+
+        //tworzenie obiektu animal pies na bazie klasy Dog.
+        //mozemy przechowywac element na bazie klasy poprzedniej,
+        //czyli tej z ktorej dziedziczy, czyli w klasie Animal
+        //jest klasa Dog
+//        Animal pies = new Dog("");
+//        pies.dajGlos();
+
+        System.out.println();
+
+        //lapanie wyjatkow "try catch"
+        //try - sprobuj, czyli tylko probuje,
+        //jesli sie nie uda to nie wyswietla.
+        //Praktycznie w kazdych projektach caly kod
+        //znajduje sie w blokach try, po to zeby
+        //zabezpieczyc sie przed bledami
+        try{
+            Animal pies = new Dog("");
+            pies.dajGlos();
+
+            //rzutowanie klasy pies na klase kot
+            //((Cat) pies).idz();
+            ((Dog) pies).idz();
+            int a = 5 / 0;
+        }catch(ClassCastException e) {
+            //wyswietla getMessage, czyli wiadomosc,
+            //co jest nie tak
+            System.out.println(e.getMessage());
+
+            //nizej mozna dodac kolejny wyjatek
+            //na przyklad arytmetyczny
+        }catch (ArithmeticException e){
+            System.out.println("Blad arytmetyczny.");
+
+            //nizej przelapuje kazdy inny blad czyli "Exception"
+        }catch (Exception e){
+            System.out.println("Inny blad");
+            System.out.println(e.getMessage());
+        }
+        finally{
+            //dodatkowo mozna zastosowac 3 element opcjonalny
+            //- finally - powinna sie wykonac zawsze
+            System.out.println("\nWykonuje sie i tak");
+        }
+
+        //lapanie wyjatkow "instanceof"
+        //sprawdzenie czy nie wystepuje blad
+        //jesli brak bledu to wyswietla zawartosc
+//        if(pies instanceof Cat) {
+//            ((Cat) pies).idz();
+//        }
+    }
+}
