@@ -1,0 +1,16 @@
+//abstrakcyjna klasa Poruszanie, dlatego
+// abstrakcyjna, poniewaz chce ja modyfikowac pozniej
+//abstract public class Poruszanie {
+
+//tworzenie interfejsu Poruszanie - jak tworzymy interfejs,
+//nie musmy tworzyc klasy abstrakcyjnej, poniewaz interfejs
+//w domysle jest juz abstrakcyjny
+public interface Poruszanie {
+
+    //zmienne w domysle sa statyczne i finalne.
+    //Rowniez musza miec przypisana jakas zmienna
+    String nazwainterfejsu = "Poruszanie";
+    //metoda
+    void jedzDoPrzodu();
+    void skrecaj();
+}
