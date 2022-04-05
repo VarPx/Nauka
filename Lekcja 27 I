@@ -1,0 +1,10 @@
+public class Lekcja27 {
+    public static void main(String[] args) {
+        System.out.println(Poruszanie.nazwainterfejsu);
+        //stworzenie obiektu car w klasie "Samochod"
+        Samochod car = new Samochod("BMW", 4);
+        //przypisanie funkcji do obiektu car
+        car.jedzDoPrzodu();
+        car.skrecaj();
+    }
+}
