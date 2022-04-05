@@ -1,0 +1,5 @@
+//abstrakcyjna klasa Animal
+//i abstrakcyjna metoda
+abstract public class Animal {
+    abstract public void dajGlos();
+}
