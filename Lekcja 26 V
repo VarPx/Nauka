@@ -1,0 +1,24 @@
+public class Dog extends Animal {
+    //konstruktor Dog, throws - moge wyrzucac, jesli dodamy throws
+    //to pozwalamy metodzie wyrzucanie bledu
+    Dog(String imie) throws ZleImieException {
+        //funkcja if wyswietla blad jesli nie
+        //podamy wcale nazwy psa
+        if(imie.length() == 0){
+            //rzuc
+            throw new ZleImieException();
+        }
+        this.imie = imie;
+    }
+    String imie;
+    //metoda
+    public void idz(){
+        System.out.println("Idzie piesek");
+    }
+
+    //metoda nadpisana dajGlos
+    @Override
+    public void dajGlos() {
+        System.out.println("Hau Hau");
+    }
+}
